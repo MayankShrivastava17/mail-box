@@ -10,13 +10,13 @@
      - Gmail Sync (Login with Gmail option) <br>
   
 2. Create/Edit the mail features.
-3. Home page - The list of all the mails scheduled for future 
-4. History Page - The list of mails sent till now
+3. History Page - The list of mails sent till now
 
 #### Specifications
-   Frontend - Html, CSS, Bulma, Bootstrap <br>
-   Backend - <br>
-
+   Frontend - Html, CSS, Bootstrap <br>
+   Backend - Nodejs,JavaScript, ejs, Mongoose<br>
+   Database - MongDB, MongoDB Atlas<br>
+   Hosted on Heroku<br>
 #### Developers
    <li> Mayank Shrivastava
    <li> Anshul Prasad
@@ -24,7 +24,7 @@
      
      
 #### Aspects
-  Navigation Bar consists of two options: ‘Sign up’ and ‘Log in’ into the application. It can be done through following ways: <br>
+  Home Page consists of two options: ‘Sign up’ and ‘Log in’ into the application. It can be done through following ways: <br>
       1.Username-password <br>
       2.Gmail Sync, that is, login with gmail option. <br>
 
@@ -44,7 +44,7 @@ The application also includes the general mailing features,
 Schedule Selector will have more features of,
 
 A. Recurring Schedule
-	This feature allows to sent the mail automatically to the recipient after every 20 or 30 seconds.
+	This feature allows to sent the mail automatically to the recipient after certain interval.
 
 B. Weekly Schedule
 	Using this feature, the user can sent the mail to recipient on any particular day and time of every week automatically.
@@ -56,8 +56,18 @@ D. Yearly Schedule
 	Unlike other schedule, this feature allows to sent mail on particular date and time every year automatically.
 
 <br>
-     
-Besides these features, the application consists of text editing feature, which gives the user to change font type and colour of the text.
+<br>
+	   
+## How to run 
+
+Step 1. Clone the repo
+
+Step 2. Type in cmd / terminal :- `npm install`
+
+Step 3. Type in cmd / terminal :- `node index.js`
+
+Step 4. Open `http://127.0.0.1:4000/`
+
 
 
 
