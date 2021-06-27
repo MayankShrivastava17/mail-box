@@ -1,0 +1,38 @@
+<div class="footer">
+  <div class="text-center ">
+    <p id="copyright">
+
+    </p>
+</div>
+     </nav>
+    
+    <!-- bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+    <!-- navbar -->
+    <script src="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.js"></script>
+    <script type="text/javascript">
+        const pushbar = new Pushbar({
+              blur:true,
+              overlay:true,
+            });
+
+            var currYear = new Date().getFullYear();
+        document.getElementById("copyright").innerHTML = "<strong>Mail-Box</strong> by display : flex;.<br>&copy " +
+            currYear + "  <b>Mail-Box</b> ";
+      </script>
+    <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
+    <script>
+  $(function () {
+  $(document).scroll(function () {
+    var $nav = $(".fixed-top");
+    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+  });
+});
+  </script>
+  
+</div>

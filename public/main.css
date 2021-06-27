@@ -1,0 +1,238 @@
+body{
+    background-image: linear-gradient(rgba(45, 103, 105, 0.637),rgb(212, 111, 111));
+    width:100vw;
+    height:100vh;
+    color:black;
+    line-height:1.5;
+    padding: 25px 60px;
+    font-weight:lighter;
+    font-family: 'Lobster', cursive;
+}
+*a{
+    cursor: pointer;
+}
+::before,::after
+{
+    box-sizing:border-box;
+}
+body::before{
+    content:"";
+    position:fixed;
+    left:0;
+    top:0;
+    background-color:aquamarine;
+    z-index:-1;
+    opacity:0.12;
+}
+.home{
+    
+    background-color:rgba(241, 239, 239,0.2);
+    border:1px solid rgb(247, 194, 185);
+    box-shadow: 1px .1px 6px rgb(199, 198, 196);
+    border-radius:30px;
+    margin: 50px 20px;
+    padding:0 auto;
+  
+}
+/* Login */
+ .jumbotron{
+     display:block;
+     background-color:rgba(241, 239, 239,0.2);
+    border:1px solid rgb(248, 238, 219);
+    border-radius:30px;
+    padding:20px 0;
+    margin-top:60px ;
+    box-shadow: 1px .1px 6px rgb(199, 198, 196);
+} 
+#login h3{
+    font-size:200%;
+    font-weight:100;
+    text-shadow: 1px 1px 2px rgb(199, 73, 73);
+}
+#login label{
+    font-size:larger;
+    font-weight:100;
+    text-align: center;
+    text-shadow: 5px 4px 5px rgb(199, 73, 73);
+    text-indent: 10;
+    padding:30;
+}
+input{
+    box-shadow: -2px 2px 7px rgb(199, 73, 73);
+}
+#login button{
+    background-color:rgb(199, 73, 73) ;
+    color:white;
+    font-weight: 100;
+    font-size:large;
+   margin-top:20px;
+   text-shadow: 4px 4px 7px rgb(199, 73, 73);
+}
+#login a{
+    color:white;
+    font-weight:lighter;
+    font-size:large;
+    margin:10px 0;
+    padding:10px 10px;
+   
+}
+#img{
+   
+    margin:10px 0;
+}
+#google{
+    text-decoration: none;
+    box-shadow:-1px 1px 7px rgb(247, 120, 120)
+}
+/* nav */
+nav{
+  
+    color:rgb(14, 222, 230);
+    font-weight: 400;
+    text-shadow: .2px .2px .2px white;
+    background-color: rgba(0, 0, 0, 0.425);
+    position:fixed;
+
+}
+.fixed-top.scrolled {
+    background-color: rgba(196, 190, 190,.5) ;
+    transition: background-color 200ms linear;
+
+  }
+#nav img{
+    position:absolute;
+    left:90%;
+    top:10; 
+}
+#nav img:hover{
+    transform: scale(1.2);
+}
+.nav-link{
+    color:rgb(223, 50, 50);
+    font-weight: 300;
+    font-size:larger;
+    padding-top:40px;
+    margin-left:30px;
+}
+.nav-link:hover{
+    color:black;
+    text-shadow: 1px 1px 2px; 
+    transform: scale(1.06);
+}
+a #close{
+    padding-top:40px;
+    margin-left:30px;
+}
+.animate__animated {
+    --animate-duration:5s;
+  }
+  
+/* home */
+.create{
+    position:absolute;
+    left:14px;
+    top:150px;
+    width:47px;
+    height:45px;
+    border-radius: 40px;
+    background-color: white;
+    padding:-6px 5px;
+    box-shadow: .3px .2px 2px rgba(223, 50, 50, 1);
+}
+.create:hover{
+    transform: scale(1.2);
+}
+.create:hover::after{
+    content:"create";
+    font-weight: 500;
+    margin-top: 10px;
+    color:white;
+}
+.history{
+    position:absolute;
+    left:14px;
+    top:260px;
+    width:47px;
+    height:45px;
+    border-radius: 40px;
+    background-color: white;
+    padding:5px 5px;
+    box-shadow: 3px 2px 2px rgba(223, 50, 50, 1);
+}
+.history:hover{
+    transform: scale(1.2);
+}
+.history:hover::after{
+ 
+    content:"history";
+    font-weight: 500;
+    margin-top: 10px;
+    color:white;
+}
+.list-group-item  {
+    color:rgb(0, 0, 0);
+    background-color:rgba(243, 157, 157, 0.4);
+    padding:5px 10px;
+    margin:0 20px;
+    box-shadow: 1px 3px 2px rgba(223, 50, 50, 1);
+   
+}
+.list-group-item:hover{
+    transform: scale(1.01);
+    
+}
+.first{
+    white-space:nowrap;
+    overflow: hidden;
+    text-overflow:ellipsis;
+}
+.first img{
+   
+     float:left;
+    display:inline;
+     border:2px solid white;
+     border-radius: 20px;
+     /* box-shadow: inset 10px 15px 15px; */
+     padding:4px;
+}
+.first h5{
+    position:absolute;
+    left:65px;
+    top:3px;
+}
+.second{
+    white-space:nowrap;
+    overflow: hidden;
+    text-overflow:ellipsis;
+     float:left;
+}
+.third h5{
+  display:inline-block;
+}
+/* model */
+.model-body label{
+    margin:10px;
+}
+.model-body input{
+    margin:0 20px;
+}
+textarea{
+    margin:15px 30px;
+}
+.modal-body a{
+  
+    margin-left: 10px;
+ 
+   float:right;
+   display:block;
+}
+.shedule{
+  display: none;
+  
+   
+}
+.footer{
+    color:black;
+    font-weight:lighter;
+
+}

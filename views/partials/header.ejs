@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- navbar -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.css">
+    <!-- icon -->
+    
+    
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"> 
+    
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>MailBox</title>
+    <link rel="stylesheet" href="/main.css">
+</head>
+<body>
+  <% if(curuser.email) {%> 
+    <div data-pushbar-id="mypushbar1" data-pushbar-direction="right">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/history">History</a>
+            </li>
+           
+            <li class="nav-item">
+              <a class="nav-link" href="/logout">Logout</a>
+            </li>
+          </ul>
+        <a data-pushbar-close>
+            <img id="close" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAABhklEQVRoQ+2Y2xGCMBBFN1KAlmAJlqBdZPyiI+1AfmQsxw4cO9AGjINPZIhkXyrj+h1v7tm7yQIOev5zPfcPBvDtBC0BS4BZAWshZgHZf7cE2CVkCvx3Anmej4qiOHCKyNUgJzD3PnchLEKWzcqy3FIgJDRIAJeNAVYX0yEcKBASGtX2aADv/TgD2L1UHAnxYv4ptF9vNmNskmiAaoNWA4kQEfPHMBhMKa1IAqBCSJsntVA9YkwSGubZAKlJaJkXAeiCgNNp8rixnvGRe755yMlnoCkUaydwbtRYK2ZeLIG7wUir1P2LmhcHiLbTFUHc/GcBEufERwZZbJPOFlKA0D3EAEcAGHIeO7oSEQF4d8+3XqOCSbABUoYUZmJ3VVx0DqSYf3vFCiRBTgBjXhOCBEAxrwWBBmh9oUEOqV97oSFN2AYESYM1iW8GltQ3qdpjB0sD3UL1a4z7SaTS4mqwALB3tsZ6A9CoKkbTEsBUS2OtJaBRVYymJYCplsZaS0CjqhjN3idwBjcnNkCyuGxyAAAAAElFTkSuQmCC"/>
+        </a>
+    </div>
+    <% } %> 
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top  ">
+      <a class="navbar-brand" href="/"><img class="animate__animated animate__bounce animate__infinite" src="./public/images/logo.png"/>
+        Mail-Box</a>
+        <ul class="navbar-nav mr-auto">
+        </ul>
+        <% if(curuser.email){ %>
+         <ul>
+         
+          <div class="pushbar_main_content">
+            <a id="nav"data-pushbar-target="mypushbar1">
+              <img  class="animate__animated animate__headShake animate__infinite" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAWklEQVRIS2NkoDFgpLH5DKMWEAxh+gfR98+f/xN0Fh4FnLy8KI7G8AHNLaDE9dj00j8O6O4DUuOEYCSj+4DmFlAaZCMgkrEFEb54ITmSB8QCUiJ+hEbyyAoiAKnWGBl8k547AAAAAElFTkSuQmCC"/>
+            </a>
+          </div>
+         </ul>
+          <% } %>
+      <!-- </div> -->
+    </nav>
+</body>

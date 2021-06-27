@@ -1,0 +1,53 @@
+<%- include('partials/header') %>
+
+<div class="container jumbotron  animate__animated animate__fadeInTopRight" id="login">
+  <div class=" d-flex justify-content-center animate__animated animate__flip ">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAENklEQVRoQ+2Zy1nbQBDHZ8SHjwhfvOYUUkGggjgV2KnAogJIBYEKgApIKghUENIBVBA4+XEx8g38sZNv9OBT5F1pV8hCNtbV+/rtzP7nYYR39uE744U18KpbfG3htYVX7AbWLr1iBp3DWRkLTwaDjuM4fQDoAcCdRDxotlo3aeKlBp4MBrsRpAcAuym4G1eI/ZUAno7HfUnUw9Ca2s8VYs6gS2PhyXi85wD0gYituW2gNb4rxNy4WgNPJpPtjdmsS0RHALBnAPkyhIj+bLfbnaVw6YQAsTWLfieuEMe1BQ4ECLELiGzNtABZQyPA1y0hLmsHPB0OuxLRyxOgxMF9AGAQFixXdxOy0Wg2m82HWgAH1tzYOLQQoPDciOdyc/MYZrNdh+h3hnjdu0IovaQy0XqNAAHAvZTSa+7sXEfv+1eOUl+5QihD1sKBUxmQSThJe+GL+EzHY4+ILgwetFKwAicxmGw9pAwB4rBCRGzVOz6ABSxIKb+wN6gOXipwAQFSnclHxKOtVutH/KM/GrFVjUOUKsOK13o1cGEBUvvNlWw0vKS62sIiwO2WENokpRBwLEB860Q0l81Yv4GEKMVzeQ98erqwCFfx1J+uEFpvsAIO8lmiwygGFhEg1V2cyEbjLGlVhnWenjjsWKWTYeTCg+RzsI7DweaPj/2yMqDEW7p9RvTSNWtU8nHYsYbltSXivqoOzn3DHE7QcQ4LuFSeR/tAdOy222fpgZEHZSUUeWtDlmBpw5I/HB4B4mnu6vYDrqSUR3GoSU4vA1ZXISX3Ub5hfzQie5bMGT4CeKpk3jbGZu6CeO62Wlx8aD8lcBTk2eW0ybnxhUT5ryqRLxU2zKKUFVKuheMB09GoR4gdIOK89IMxZLj57XPovsqMh9fyx+NTCIv7Uj4p5UfVczEGnntjAB4SdQjgU84JtblsPM82oTC4EWVLJz3PKg7Hk6NcuYeIXhI+nf+qDhnFWBZE41TRAJaHaCukQhbWbRplXUEplhXw+ffXJBQG0LlexWsUsrDB5nNDFgybWSGVamET+DJibN4+upZOKW84b/M5sctux9gspxurbelUDuyPRtwq/V4GVcYamRVSpS5dCTDRN1VurrqghYtWFcBZLZ23cGnuIXcX6dJ5FVKlLv0wHF4j4udFAZtUSHUB9iVix+GMK+yiFPsMKqQ6AAewcWci6l2z61tXZ3ktnbd4w//V1lEV1UtXNUHT7vHx0tb981o6bwocwDYaHV1tzIezVHWjCqlSl467Jyaw8cFMXdxWsBZePEQdyL82sC/QYauW/33ICmlGFVJlFmbgDcfZ0/WyTGQ5q6Fo0tKp/A2bQOWNiaotVvFkm8n6/S7cpfNAbH4P6unZ7Dj6E/0h/r/YZo2lArYF041fePFQ1kHLWmcNXNZN1nWdtYXrapmyzrW2cFk3Wdd13p2F/wFwMfdMejMXsQAAAABJRU5ErkJggg=="/>
+  </div>
+  <h3 class="text-center animate__animated animate__flip ">Login</h3>
+  <div class="d-flex justify-content-center form animate__animated animate__lightSpeedInRight">
+      <form action="/login" method="POST">
+        <label for="exampleInputEmail1">Email address</label>
+        <div class="form-inline">
+            <div class="input-group mb-2">
+              <div class="input-group-prepend">
+                <div class="input-group-text">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABMUlEQVRIS8WU0XHCMBBE90QBoQRUQRRTAR2QDpIKUkJMBRkqoAQoIQVgjzpQSnAKQMoo2Jmxse48YAf9ytq3OnmXMPGiifUxCOCMMVDqHYCpDVl4v9HWWsmgCHDL5Roh7HuFiJ51URw4CAtwxsyhlAMwT4hU8F5ra6sUhAdw7htFpVb6ePy8DpBlOYA4e25tdFnG7/qnyJ1k5z/KDc5v8AXgIWHkG94vrn6DKDrpX9S4/s3BbJYjhHMOiCxOp3yUHEhBkvbFoEkC0n4SUIfsDUQxyU1FtPXiqEI4wPtt6qF7AS7LXgB8MAnuGq9A9NpXGxeAWnwnXX1oN7UAA7pH4l50UxswrBokSKs6uoDY74+SArtPZHVRPDXfdAHhJvH6sC7LP93/BYzhvqtxvySPdZsfYf51GfqNCHwAAAAASUVORK5CYII="/>
+                </div>
+              </div>
+              <input  type="email" class="form-control text-center" name="email" id="exampleInputEmail1"
+              aria-describedby="emailHelp" placeholder="Enter email" required>
+            </div>   
+        </div>
+        <label id="password" for="exampleInputEmail1">Password</label>
+        <div class="form-inline">
+           <div class="input-group mb-2">
+             <div class="input-group-prepend">
+               <div class="input-group-text">
+                   <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABEUlEQVRIS+2V3w1BMRTGv9YAYgLOBpR3bGADTCAmwAY2YANG4F1ObNBrAxO00l4S7r9yRSKhT81tz/f77unpqcCHh/iwPp4C6HZ7AGMmEKLnDVm7Q6WyoMNhFzIYBOhWaw0hhjlCC2KeF0EKAd65tZurwBTGbP1cyhGA2XXeL/qTYoBSLgVdAFNiXt471Uo55w6yJ+Y4dRkjBLA+xpgaHY/nB0Cz2YCU2n0j5lydpwB5Alopb+DHALrT6cGYFYBGqMYT6xGkHCcrKnUGWqkIQP1F8dv2iJjpPjYLEFdOyZE88D8glch/ioK19RUpcl2zGrSaveFEzA8dIH0P4laxLnGbT+4hCraKks5zw4Jv8rvAC6z7gRmrBGjoAAAAAElFTkSuQmCC"/>
+               </div>
+             </div>
+             <input type="password" name="password" class="form-control text-center" id="exampleInputPassword1"
+               placeholder="Password" required>
+           </div>   
+       </div>
+          <button type="submit" class="btn btn-md btn-block mb-3">Submit</button>
+          <a href="/signup">Create an account?</a>
+          <div class="form-inline">
+            <label for="exampleInputEmail1"></label>
+            <div class="input-group mb-2">
+              <div class="input-group-prepend" id="img">
+                <div class="input-group-text">
+                  <img src="../images/google.png"  width="20px" height="20px">
+                </div>
+              </div>  
+                <a href="/auth/google" id="google" type="text" class="text-dark form-control" >Login with Google</a>
+            </div>
+        </div>
+      </form>
+  </div>
+</div>
+
+</html>
+
+<%- include('partials/footer') %>

@@ -1,0 +1,31 @@
+<%- include('partials/header') %>
+<div class="home">
+
+    <ul class="list-group mt-5 mb-5" style="text-align: center;">
+        <% if(mails.length!= 0) {%> 
+            <% mails.forEach(mail=>{ %>
+                <% for(i=0;i<mail.to.length;i++) {%> 
+                    <li class="list-group-item">
+                        <div class="row">
+                            <div class="col-md-2  first">
+                                <img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABMUlEQVRIS8WU0XHCMBBE90QBoQRUQRRTAR2QDpIKUkJMBRkqoAQoIQVgjzpQSnAKQMoo2Jmxse48YAf9ytq3OnmXMPGiifUxCOCMMVDqHYCpDVl4v9HWWsmgCHDL5Roh7HuFiJ51URw4CAtwxsyhlAMwT4hU8F5ra6sUhAdw7htFpVb6ePy8DpBlOYA4e25tdFnG7/qnyJ1k5z/KDc5v8AXgIWHkG94vrn6DKDrpX9S4/s3BbJYjhHMOiCxOp3yUHEhBkvbFoEkC0n4SUIfsDUQxyU1FtPXiqEI4wPtt6qF7AS7LXgB8MAnuGq9A9NpXGxeAWnwnXX1oN7UAA7pH4l50UxswrBokSKs6uoDY74+SArtPZHVRPDXfdAHhJvH6sC7LP93/BYzhvqtxvySPdZsfYf51GfqNCHwAAAAASUVORK5CYII=" />
+                                <h5><%= mail.to[i] %> </h5>
+                            </div>
+                            <div class="col-md-8  second">
+                                <%= mail.content %> 
+                            </div>
+                            <div class="col-md-2 third">
+                                <a href="/delete/<%= mail.userid %>/">Delete</a>
+                            </div>
+                        </div>
+                    </li>
+                <% } %> 
+           <% }) %> 
+        <% }else {%> 
+            <h2>No History!!!</h2>
+        <% } %> 
+    </ul>
+</div>
+
+<%- include('partials/footer') %>

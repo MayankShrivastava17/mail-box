@@ -1,0 +1,19 @@
+<%- include('partials/header') %>
+
+<div class="home row justify-content-center mt-5">
+    <ul class="list-group list-group-flush">
+        <% mail.to.forEach(m =>{%>
+            <li class="list-group-item"><%= m %> </li>
+        <% }) %> 
+        <% mail.cc.forEach(m=>{%>
+            <li class="list-group-item">
+                <%= m %>
+            </li>
+        <% }) %>
+        <li class="list-group-item"><%= mail.content %> </li>
+        <li class="list-group-item"><%= mail.subject%></li>
+        <li class="list-group-item">It is <%=mail.schedule%> </li>
+    </ul>
+</div>
+
+<%- include('partials/footer') %>
