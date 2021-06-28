@@ -2,8 +2,8 @@
   "name": "mailbox",
   "version": "1.5.0",
   "description": "mail platform for everyone",
-  "start": "index.js",
   "scripts": {
+    "start": "index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -20,5 +20,8 @@
     "nodemailer": "^6.6.2",
     "passport": "^0.4.1",
     "passport-google-oauth2": "^0.2.0"
+  },
+  "engines": {
+    "node" : ">=10.0.0"
   }
 }
