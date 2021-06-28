@@ -44,7 +44,8 @@ app.use('/auth', GauthRoutes)
 app.use(Lauthroutes)
 app.use(mailroutes)
 
-app.listen(4000, () => {
+const port = process.env.PORT || 3000;
+app.listen(port, () => {
     console.log('Server Started');
 })
 
