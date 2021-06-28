@@ -1,6 +1,8 @@
 # MAIL-BOX
 ### Carried out by - display : flex;
 
+Deployment is [live](https://displayflex-mail-box.herokuapp.com/).
+
  #### Overview 
    In the project 'MAIL-BOX', a full-stack web application is built, allows user to log in and send the mails to recurring recipients. 
 
